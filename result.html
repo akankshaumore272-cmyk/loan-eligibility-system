@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Eligibility Result</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Loan Eligibility Result</h1>
+
+    <h2>Hello, {{ name }}</h2>
+
+    <p><strong>Age:</strong> {{ age }}</p>
+    <p><strong>Monthly Income:</strong> ₹{{ income }}</p>
+    <p><strong>Credit Score:</strong> {{ credit_score }}</p>
+    <p><strong>Loan Amount:</strong> ₹{{ loan_amount }}</p>
+
+    <h2>{{ result }}</h2>
+
+    <br>
+
+    <a href="/">← Check Another Loan</a>
+
+</div>
+
+</body>
+</html>

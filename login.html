@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Eligibility Login</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🏦 Loan Eligibility Login</h1>
+
+    <form action="/login" method="POST">
+
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Enter your password" required>
+
+        <button type="submit">Login</button>
+
+    </form>
+
+    <br>
+
+    <p style="text-align:center;">
+        Don't have an account?
+        <a href="/register">Register</a>
+    </p>
+
+    <br>
+
+    <a href="/register">
+        <button type="button">Create New Account</button>
+    </a>
+
+    <br><br>
+
+    <a href="/">
+        <button type="button">Back to Home</button>
+    </a>
+
+</div>
+
+</body>
+</html>

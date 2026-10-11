@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Eligibility Expert System</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🏦 Loan Eligibility Expert System</h1>
+
+    <form action="/check" method="POST">
+
+        <label>Full Name</label>
+        <input type="text" name="name" placeholder="Enter your name" required>
+
+        <label>Age</label>
+        <input type="number" name="age" placeholder="Enter your age" required>
+
+        <label>Monthly Income (₹)</label>
+        <input type="number" name="income" placeholder="Enter monthly income" required>
+
+        <label>Credit Score</label>
+        <input type="number" name="credit_score" placeholder="300 - 900" required>
+
+        <label>Loan Amount (₹)</label>
+        <input type="number" name="loan_amount" placeholder="Enter loan amount" required>
+
+        <button type="submit">Check Eligibility</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
